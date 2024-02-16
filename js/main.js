@@ -45,7 +45,7 @@
         },
         500,
         function () {
-          // window.location.hash = href;
+          dow.location.hash = href;
         }
       );
     });
@@ -55,12 +55,12 @@
 
   var carousel = function () {
     $(".home-slider").owlCarousel({
-      loop: true,
+      loop: false,
       autoplay: true,
       margin: 0,
       animateOut: "fadeOut",
       animateIn: "fadeIn",
-      nav: true,
+      nav: false,
       autoplayHoverPause: false,
       items: 1,
       // navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
@@ -209,3 +209,59 @@
 
   // magnific popup
 })(jQuery);
+$(document).ready(function () {
+  var w = window.innerWidth;
+
+  if (w > 991) {
+    $("#menu-jk").scrollToFixed();
+  }
+});
+
+$(document).ready(function () {
+  $("#owl-demo").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    autoplay: true,
+
+    dots: true,
+    autoplayTimeout: 5000,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".filter-button").click(function () {
+    var value = $(this).attr("data-filter");
+
+    if (value == "all") {
+      //$('.filter').removeClass('hidden');
+      $(".filter").show("1000");
+    } else {
+      //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+      //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+      $(".filter")
+        .not("." + value)
+        .hide("3000");
+      $(".filter")
+        .filter("." + value)
+        .show("3000");
+    }
+  });
+
+  if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+  }
+  $(this).addClass("active");
+});
