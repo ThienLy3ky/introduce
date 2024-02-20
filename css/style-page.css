@@ -1287,4 +1287,8 @@ html {
   z-index: 3;
 }
 
+.hoby li {
+  min-width: fit-content
+}
+
 /*# sourceMappingURL=style.css.map */

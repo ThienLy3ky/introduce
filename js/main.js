@@ -43,10 +43,7 @@
         {
           scrollTop: $($.attr(this, "href")).offset().top - 70,
         },
-        500,
-        function () {
-          dow.location.hash = href;
-        }
+        500
       );
     });
   };
