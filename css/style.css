@@ -3991,7 +3991,7 @@ textarea.form-control {
   transform: skewX(45deg);
 }
 
-.box .shadow::after {
+/* .box-skill .shadow::after {
   content: '';
   position: absolute;
   bottom: -200%;
@@ -4000,7 +4000,7 @@ textarea.form-control {
   height: 200%;
   background: linear-gradient(rgba(0, 0, 0, 0.075), transparent);
   transform: skewX(45deg);
-}
+} */
 
 .box-skill .content {
   position: relative;
@@ -4112,8 +4112,9 @@ textarea.form-control {
 }
 
 .box-skill .content .number h2 {
-  font-size: 2.5rem;
-  color: #555;
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 700;
 }
 
 .box-skill .content .number h2 span {

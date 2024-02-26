@@ -297,10 +297,9 @@
                 <div class="detal-jumbo">
                   <h3>Hello I'm Web Developer</h3>
                   <p class="bv-p-translate">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                    not only five centuries,text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book. It has survived not only five centuries,<bv-p-translate-btn
+                    Tôi đã có kinh nghiệm thiết kế và phát triển các trang WEb trên nhiều lĩnh vực.vực Có thể xây dựng trang Web cả về Backend và
+                    frontEnd
+                    <bv-p-translate-btn
                       class="bv-p-translate-btn"
                       title="Burning Vocabulary translation"
                       style="left: -8px; display: none; position: absolute !important"
@@ -448,7 +447,7 @@
             <div class="title-2 row no-margin">
               <h2>My Skills</h2>
             </div>
-            <div class="skills row ftco-animate">
+            <div id="owl-skill" class="test-row row owl-carousel ftco-animate">
               <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="box-skill ftco-animate">
                   <div class="shadow"></div>
@@ -460,7 +459,7 @@
                         <circle cx="70" cy="70" r="70"></circle>
                       </svg>
                     </div>
-                    <div>
+                    <div class="number">
                       <h2>Node JS</h2>
                     </div>
                   </div>
@@ -477,7 +476,7 @@
                         <circle cx="70" cy="70" r="70"></circle>
                       </svg>
                     </div>
-                    <div>
+                    <div class="number">
                       <h2>React JS</h2>
                     </div>
                   </div>
@@ -487,15 +486,15 @@
                 <div class="box-skill ftco-animate">
                   <div class="shadow"></div>
                   <div class="content">
-                    <div class="percent" data-text="40%" style="--num: 40">
+                    <div class="percent" data-text="60%" style="--num: 60">
                       <div class="show-skill"></div>
                       <svg>
                         <circle cx="70" cy="70" r="70"></circle>
                         <circle cx="70" cy="70" r="70"></circle>
                       </svg>
                     </div>
-                    <div>
-                      <h2>Python</h2>
+                    <div class="number">
+                      <h2>Web3</h2>
                     </div>
                   </div>
                 </div>
@@ -504,15 +503,32 @@
                 <div class="box-skill ftco-animate">
                   <div class="shadow"></div>
                   <div class="content">
-                    <div class="percent" data-text="40%" style="--num: 40">
+                    <div class="percent" data-text="80%" style="--num: 80">
                       <div class="show-skill"></div>
                       <svg>
                         <circle cx="70" cy="70" r="70"></circle>
                         <circle cx="70" cy="70" r="70"></circle>
                       </svg>
                     </div>
-                    <div>
-                      <h2>Go</h2>
+                    <div class="number">
+                      <h2>Docker</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box-skill ftco-animate">
+                  <div class="shadow"></div>
+                  <div class="content">
+                    <div class="percent" data-text="80%" style="--num: 80">
+                      <div class="show-skill"></div>
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h2>Docker</h2>
                     </div>
                   </div>
                 </div>
@@ -533,9 +549,7 @@
                     </div>
                     <div class="col-10 sdrtg">
                       <h4>Data Analysis</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
+                      <p>Có kinh nghiệm tham gia phân tích yêu cầu, thiết kế hệ thống</p>
                     </div>
                   </div>
                 </div>
@@ -563,9 +577,7 @@
                     </div>
                     <div class="col-10 sdrtg">
                       <h4>Database Design</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
+                      <p>Có kinh nghiệm thiết kế và làm việc với nhiều loại cơ sở dữ liệu bao Sql/noSql: MySQL, postgresql, mongo,..</p>
                     </div>
                   </div>
                 </div>
@@ -592,9 +604,7 @@
                     </div>
                     <div class="col-10 sdrtg">
                       <h4>Web Development</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
+                      <p>Có khả năng tham gia xây dựng sản phẩm cả về backend và Front-end</p>
                     </div>
                   </div>
                 </div>
@@ -621,10 +631,21 @@
                       </div>
                     </div>
                     <div class="col-10 sdrtg">
-                      <h4>Build Server</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
+                      <h4>Server Less</h4>
+                      <p>Có kinh nghiệm xây dựng, làm việc với các service và cloud: aws,</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="seervic-col row">
+                    <div class="col-2 no-padding icons">
+                      <div class="iconder">
+                        <i class="fa-brands fa-bitcoin"></i>
+                      </div>
+                    </div>
+                    <div class="col-10 sdrtg">
+                      <h4>Block Chain</h4>
+                      <p>Đã có nhiều kinh nghệm làm việc với BlockChain: Web3, eth,..</p>
                     </div>
                   </div>
                 </div>
@@ -633,27 +654,26 @@
                   <div class="seervic-col row">
                     <div class="col-2 no-padding icons">
                       <div class="iconder">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-navigation"
-                        >
-                          <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
-                        </svg>
+                        <i class="fa-solid fa-code"></i>
+                      </div>
+                    </div>
+                    <div class="col-10 sdrtg">
+                      <h4>Multi languages</h4>
+                      <p>Có khả năng sử dụng nhiều ngôn ngữ lập trình khác nhau và có khả năng tìm hiểu, học ngôn ngữ mới nhanh chóng và hiệu quả.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="seervic-col row">
+                    <div class="col-2 no-padding icons">
+                      <div class="iconder">
+                        <i class="fa-solid fa-square-poll-horizontal"></i>
                       </div>
                     </div>
                     <div class="col-10 sdrtg">
                       <h4>Agile Scrum</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
+                      <p>Có kiến thức và kinh nghiệm phát triển sản phẩm theo mô hình scrum</p>
                     </div>
                   </div>
                 </div>
@@ -681,9 +701,7 @@
                     </div>
                     <div class="col-10 sdrtg">
                       <h4>Team Work</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
+                      <p>Có khả năng giao tiếp và làm việc nhóm tốt.</p>
                     </div>
                   </div>
                 </div>
@@ -972,22 +990,22 @@
                   </div>
                   <div class="col-10 pl-0 drtg">
                     <b>Working Hours</b>
-                    <p>Daily 07:00AM TO 06:00PM</p>
+                    <p>Daily 07:00AM TO 22:00PM</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row right-title">
+            <!-- <div class="row right-title">
               <div class="col-sm-1 col-2 icob">
                 <i class="fas fa-graduation-cap"></i>
               </div>
               <div class="col-sm-11 col-10 titb">
                 <h2>My Resume</h2>
               </div>
-            </div>
+            </div> -->
 
-            <div class="resume-cover ftco-animate">
+            <!-- <div class="resume-cover ftco-animate">
               <div class="row">
                 <div class="col-md-12">
                   <ul class="cbp_tmtimeline">
@@ -1112,16 +1130,16 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div id="contactus" class="row right-title pt-4">
+            <!-- <div id="contactus" class="row right-title pt-4">
               <div class="col-sm-1 col-2 icob">
                 <i class="fas fa-graduation-cap"></i>
               </div>
               <div class="col-sm-11 col-10 titb">
                 <h2>Contact Me</h2>
               </div>
-            </div>
+            </div> -->
 
             <div class="contact-us ftco-animate">
               <!-- <iframe
